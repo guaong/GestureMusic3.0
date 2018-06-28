@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/switch_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/full_screen"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch_timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch_full_screen"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/timing"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/group_timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch_timing"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radio_half_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/half_hour"
+            android:textColor="@color/colorFont"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radio_one_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one_hour"
+            android:textColor="@color/colorFont"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radio_one_and_a_half_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one_and_a_half_hour"
+            android:textColor="@color/colorFont"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radio_two_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/two_hour"
+            android:textColor="@color/colorFont"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch_diy_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_timing"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/div_bg"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch_diy_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch_diy_bg"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/div_water"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

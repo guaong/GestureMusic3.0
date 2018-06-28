@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_body"
+    tools:context="io.guaong.gesturemusic.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <io.guaong.gesturemusic.ui.WaterWaveView
+            android:id="@+id/view_water_wave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:padding="10dp"
+            android:textColor="@color/colorFont"
+            android:src="@drawable/settings"
+            android:background="#00000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <io.guaong.gesturemusic.ui.CircleBorderView
+            android:id="@+id/view_circle_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000">
+
+            <io.guaong.gesturemusic.ui.PlayButton
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </io.guaong.gesturemusic.ui.CircleBorderView>
+
+        <TextView
+            android:maxLines="1"
+            android:maxEms="25"
+            android:ellipsize="end"
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_circle_border"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="30sp" />
+
+        <TextView
+            android:maxLines="1"
+            android:maxEms="25"
+            android:ellipsize="end"
+            android:id="@+id/text_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:src="@drawable/loop"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_order"/>
+
+        <io.guaong.gesturemusic.ui.CircleButton
+            android:id="@+id/btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/back"
+            android:id="@+id/text_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_above="@+id/text_back"
+            android:id="@+id/recycler_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

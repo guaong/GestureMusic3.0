@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GestureMusic</string>
+    <string name="back">返回</string>
+    <string name="settings">设置</string>
+    <string name="full_screen">全屏</string>
+    <string name="timing">定时</string>
+    <string name="div_bg">自定义背景颜色</string>
+    <string name="div_water">自定义波纹颜色</string>
+    <string name="one_hour">60分钟</string>
+    <string name="two_hour">120分钟</string>
+    <string name="one_and_a_half_hour">90分钟</string>
+    <string name="half_hour">30分钟</string>
+    <string name="no_music">还没有任何本地音乐:-)</string>
+</resources>
